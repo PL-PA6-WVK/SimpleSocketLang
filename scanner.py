@@ -53,11 +53,14 @@ def t_ID(t):
 # Identifies a comment
 # A comment is defined as a symbol
 # followed by any combination of alphanumeric characters
+
+
 def t_COMMENT(t):
     r"""\#.*"""
     pass  # as soon as a comment is detected, it's obviated by the system.
 
 # Will tokenize a sequence identified by the RegEx as a number
+
 
 def t_NUMBER(t):
     r"""\d+"""
