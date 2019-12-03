@@ -1,6 +1,6 @@
 
 
-  <h3 align="center">Our Language</h3>
+  <h3 align="center">SimpleSocketLang</h3>
 
   <p align="center">
     A language to simplify comunication between devices!
