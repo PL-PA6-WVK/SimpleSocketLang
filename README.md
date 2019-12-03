@@ -121,13 +121,13 @@ Distributed under the GNU License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Victor Nazario - [@your_twitter](https://twitter.com/your_username) - victor.nazario@upr.edu
+Victor Nazario - victor.nazario@upr.edu
 
-Kiara Rodríguez - [@your_twitter](https://twitter.com/your_username) - mail
+Kiara Rodríguez - kiara.rodriguez18@upr.edu
 
-Wilfredo Aponte - [@your_twitter](https://twitter.com/your_username) - mail
+Wilfredo Aponte - wilfredo.aponte@upr.edu
 
-Project Link: [https://github.com/victor-nazario/PyLanguage](https://github.com/victor-nazario/PyLanguage)
+Project Link: [https://github.com/PL-PA6-WVK/SimpleSocketLang](https://github.com/PL-PA6-WVK/SimpleSocketLang)
 
 
 
