@@ -1,11 +1,15 @@
 # Author: Victor Nazario Morales (843-15-4984)
-# Scanner implementation for the PySocket Language
 
-import ply
+# ----------------------------------------------------------
+# scanner.py
+#
+# Scanner implementation for the PySocket Language
+# ----------------------------------------------------------
+import ply.lex as lex
 
 tokens = (
     'ID', 'NUMBER',
-    'ELSE', 'IF', 'AND', 'OR', 'EQUALS',
+    'AND', 'OR', 'EQUALS',
     'LPAREN', 'RPAREN', 'COMMA', 'SEMICOLON',
     'DOT', 'LT', 'LTE', 'GT', 'GTE',
 )
@@ -19,10 +23,8 @@ reserved_keywords = {
 
 # Tokens
 t_ignore = '\t'
-t_NUMBER = '\d+'
-t_ID = r'[a-zA-Z_][a-zA-Z0-9_]*'
-t_ELSE = r'\else'
-t_IF = r'\if'
+t_ELSE = r'else'
+t_IF = r'if'
 t_AND = r'\&'
 t_OR = r'\|'
 t_EQUALS = r'\='
@@ -43,7 +45,7 @@ tokens = tokens + tuple(reserved_keywords.values())
 # This will recognize an ID for the language given the RegEx.
 
 def t_ID(t):
-    r"""[a-zA-Z_][a-zA-Z0-9_]*"""
+    r'[a-zA-Z_][a-zA-Z0-9_]*'
     if t.value.upper() in reserved_keywords:
         t.value = t.value.upper()
         t.type = t.value
@@ -56,7 +58,7 @@ def t_ID(t):
 
 
 def t_COMMENT(t):
-    r"""\#.*"""
+    r"""\%.*"""
     pass  # as soon as a comment is detected, it's obviated by the system.
 
 # Will tokenize a sequence identified by the RegEx as a number
@@ -70,6 +72,24 @@ def t_NUMBER(t):
 # Function to output when an error has been found in the tokenizing progress
 
 
-def t_ERROR(t):
-    print("The character is illegal '%s'" % t.value[0])
+def t_error(t):
+    print("Illegal Character '%s'" % t.value[0])
     t.lexer.skip(1)
+
+# Builds the lexer
+
+lexer = lex.lex()
+
+data = 'IF x > 8 = 10'
+
+def main():
+
+    lexer.input(data)
+
+    while True:
+        tok = lexer.token()
+        if not tok:
+            break
+        print(tok)
+
+main()
