@@ -66,35 +66,46 @@ SSLang is completely built with Open Source technologies, including:
 
 * Clone the SSLang repository.
 ```terminal
-git clone https://github.com/PL-PA6-WVK/SimpleSocketLang.git
+$ git clone https://github.com/PL-PA6-WVK/SimpleSocketLang.git
 ```
 * Alternatively, a zip file can be dowloaded in the repository. 
 
-### Installation
+### Installation and usage
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-```sh
-git clone https://github.com/your_username_/Project-Name.git
+1. Once the project is downloaded, open a terminal at folder
+2. Run SSLang.py
+```terminal
+$ python SSLang.py
 ```
-3. Install NPM packages
-```sh
-npm install
+3. Choose one of the 5 available commands
+* fact_server: creates random facts giving local server
+* fact_client: creates random facts receiving client server
+* host_server: creates a external host to our SSLang's web page
+* chat_server: creates a server side of a chat room
+* chat_client: creates a client side of a chat room
+
+Example 
+
+```terminal
+SocketLang ~ $ fact_server
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+
+Open a new terminal window
+
+```terminal
+$ python SSLang.py
 ```
 
+```terminal
+SocketLang ~ $ fact_client
+```
+ ...and Voilá, a fact about Computer Science is presented to the client. 
+ 
+5. Exiting SSLang
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+```terminal
+SocketLang ~ $ exit
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing

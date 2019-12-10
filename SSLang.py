@@ -1,13 +1,17 @@
-from http.server import HTTPServer
 import ply.yacc as yacc
 import scanner
 import server
 import sockets
 
-# COMMANDS
-# specify posible commands
+# COMMANDS (on terminal)
+# fact_server: creates random facts giving local server
+# fact_client: creates random facts receiving client server
+# host_server: creates a external host to our SSLang's web page
+# chat_server: creates a server side of a chat room
+# chat_client: creates a client side of a chat room
+# exit: to exit SSLang
 
-# Dictionay of IDS=s
+# Dictionay of IDs
 ids = {}
 
 
@@ -38,19 +42,19 @@ class Parser(object):
     def p_expression_id(p):
         'expression : ID'
         p[0] = p[1]
-        if p[1] == "local_server":
+        if p[1] == "fact_server":
             print("Server connected successfully!")
             server.local_server()
-        elif p[1] == "external_server":
+        elif p[1] == "host_server":
             print("Server connected successfully!")
             print("'localhost:8000' is open, enter that address in browser.")
             server.local_site()
-        elif p[1] == "give_a_fact":
+        elif p[1] == "fact_client":
             sockets.fact_client()
-        elif p[1] == "chat_client":
-            sockets.client_chat()
         elif p[1] == "chat_server":
             sockets.server_chat()
+        elif p[1] == "chat_client":
+            sockets.client_chat()
         else:
         # attempt to lookup variable in current dictionary, throw error if not found
             try:
@@ -68,11 +72,11 @@ class Parser(object):
 
         while True:
             try:
-                text = input('SocketLang ~ ')
+                text = input('SSLang ~ ')
             except EOFError:
                 break
             if text == "exit":
-                print("user has exited")
+                print("SSLang has been closed")
                 break
             if text:
                 parser.parse(text)
