@@ -66,7 +66,7 @@ SSLang is completely built with Open Source technologies, including:
 
 * Clone the SSLang repository.
 ```terminal
-git clone https://github.com/PL-PA6-WVK/SimpleSocketLang.git
+$ git clone https://github.com/PL-PA6-WVK/SimpleSocketLang.git
 ```
 * Alternatively, a zip file can be dowloaded in the repository. 
 
@@ -99,7 +99,7 @@ $ python SSLang.py
 ```terminal
 SocketLang ~ $ fact_client
 ```
- ...and Voilá, a fact about Computer Science is presented to the cleint. 
+ ...and Voilá, a fact about Computer Science is presented to the client. 
  
 5. Exiting SSLang
 
