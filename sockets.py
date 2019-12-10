@@ -17,5 +17,3 @@ def client():
 
     print('Received from server: ' + data)
 
-
-client()

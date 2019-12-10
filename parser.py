@@ -1,6 +1,8 @@
 from http.server import HTTPServer
 import ply.yacc as yacc
 import scanner
+import server
+import sockets
 
 # COMMANDS
 # specify posible commands
@@ -34,11 +36,13 @@ class parser(object):
         'expression : ID'
         p[0] = p[1]
         if p[1] == "local_server":
-            #httpd = HTTPServer(('localhost', 8080), Server)
-            #httpd.handle_request()
-           print("Server connected successfully!")
+            server.local_server()
+            # httpd = HTTPServer(('localhost', 8080), Server)
+            # httpd.handle_request()
+            print("Server connected successfully!")
         elif p[1] == "external_server":
-            #connect to external server
+            sockets.client()
+            # connect to external server
             print("Server connected successfully!")
         else:
         # attempt to lookup variable in current dictionary, throw error if not found

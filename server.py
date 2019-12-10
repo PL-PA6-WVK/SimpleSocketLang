@@ -31,4 +31,4 @@ def rand_msg():
     return msg[rand.randrange(2)]
 
 
-local_server()
+# def local_site():

@@ -4,6 +4,7 @@ Unused terminals:
 
     AND
     COMMA
+    DIVISION
     DOT
     ELSE
     GT
@@ -11,8 +12,12 @@ Unused terminals:
     IF
     LT
     LTE
+    MODULO
+    MULTIPLICATION
     OR
+    PLUS
     SEMICOLON
+    SPACE
 
 Grammar
 
@@ -27,6 +32,7 @@ Terminals, with rules where they appear
 
 AND                  : 
 COMMA                : 
+DIVISION             : 
 DOT                  : 
 ELSE                 : 
 EQUALS               : 1
@@ -37,10 +43,14 @@ IF                   :
 LPAREN               : 3
 LT                   : 
 LTE                  : 
+MODULO               : 
+MULTIPLICATION       : 
 NUMBER               : 4
 OR                   : 
+PLUS                 : 
 RPAREN               : 3
 SEMICOLON            : 
+SPACE                : 
 error                : 
 
 Nonterminals, with rules where they appear
