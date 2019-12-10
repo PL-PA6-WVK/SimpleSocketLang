@@ -47,6 +47,10 @@ class Parser(object):
             server.local_site()
         elif p[1] == "give_a_fact":
             sockets.client()
+        elif p[1] == "newclient":
+            sockets.client_start()
+        elif p[1] == "newserver":
+            server.external_server()
         else:
         # attempt to lookup variable in current dictionary, throw error if not found
             try:
