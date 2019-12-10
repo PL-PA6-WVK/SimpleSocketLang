@@ -69,11 +69,12 @@ SSLang is completely built with Open Source technologies, including:
 
 ### Downloading 
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
+
+* Clone the SSLang repository.
+```terminal
+git clone https://github.com/PL-PA6-WVK/SimpleSocketLang.git
 ```
+* Alternatively, a zip file can be dowloaded in the repository. 
 
 ### Installation
 
@@ -99,14 +100,6 @@ const API_KEY = 'ENTER YOUR API';
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
 
 
 <!-- CONTRIBUTING -->
@@ -139,23 +132,6 @@ Kiara Rodríguez - kiara.rodriguez18@upr.edu
 Wilfredo Aponte - wilfredo.aponte@upr.edu
 
 Project Link: [https://github.com/PL-PA6-WVK/SimpleSocketLang](https://github.com/PL-PA6-WVK/SimpleSocketLang)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
 
 
 
