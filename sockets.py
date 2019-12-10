@@ -1,8 +1,6 @@
-import select
 import socket
 import sys
 import time
-from _thread import *
 
 testHost = '127.0.0.1'
 testPort = 65432
@@ -12,27 +10,13 @@ testPort = 65432
 # s.connect((ip, testPort))
 
 
-def client():
+def fact_client():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.connect((testHost, testPort))
         s.sendall(b'Hello, world')
         data = s.recv(1024).decode()
 
-    print('Received from server: ' + data)
-
-
-def client_start():
-    host_IP = input("Enter server IP address: ")
-    port = int(input("Enter port to use (server and client must select same port): "))
-    socket_for_client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    # address = ("192.168.0.7", 10000)
-    address = (host_IP, port)
-    socket_for_client.connect(address)
-    while True:
-        message = input("Message: ")
-        socket_for_client.sendall(message.encode())
-        if message == "exit()":
-            break
+    print('Fact from server: ' + data)
 
 
 def client_chat():
@@ -70,7 +54,6 @@ def client_chat():
 
 
 def server_chat():
-
 
     print('Setup Server...')
     time.sleep(1)
