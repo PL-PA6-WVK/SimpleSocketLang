@@ -7,6 +7,7 @@ import sockets
 # COMMANDS
 # specify posible commands
 
+# Dictionay of IDS=s
 ids = {}
 
 
@@ -42,11 +43,9 @@ class Parser(object):
             server.local_server()
         elif p[1] == "external_server":
             print("Server connected successfully!")
-            print("localhost:8000 is open, enter that address in browser.")
-            print("To terminate localhost press CTRL+Z")
+            print("'localhost:8000' is open, enter that address in browser.")
             server.local_site()
-            # connect to external server
-        elif p[1] == "client_server":
+        elif p[1] == "give_a_fact":
             sockets.client()
         else:
         # attempt to lookup variable in current dictionary, throw error if not found
@@ -58,7 +57,7 @@ class Parser(object):
 
     # handle parsing errors
     def p_error(p):
-        print("Syntax error at '%s'" % p.value)
+        print("Syntax error at '%s'" % p)
 
     if __name__ == '__main__':
         parser = yacc.yacc()
@@ -69,7 +68,7 @@ class Parser(object):
             except EOFError:
                 break
             if text == "exit":
-                print("User has exited")
+                print("user has exited")
                 break
             if text:
                 parser.parse(text)
