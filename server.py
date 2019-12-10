@@ -1,9 +1,27 @@
 import socket
 import random as rand
 from http.server import HTTPServer, BaseHTTPRequestHandler
+import time
 
 extPort = 80
 ip = socket.gethostbyname('www.google.com')
+
+
+def external_server():
+    listen_input_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    port_used = 10000
+    ip_address = socket.gethostname()
+    listen_input_socket.bind((ip_address, port_used))
+    listen_input_socket.listen(100)
+    print("Server started!")
+    clientSocket, address = listen_input_socket.accept()
+    print("Connection made!!! \n Now waiting for message!")
+
+    while True:
+        message = clientSocket.recv(1024).decode()
+        print(message)
+        if not message == "":
+            time.sleep(5)
 
 
 def local_server():

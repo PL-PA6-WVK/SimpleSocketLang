@@ -17,3 +17,15 @@ def client():
 
     print('Received from server: ' + data)
 
+def client_start():
+    host_IP = input("Enter server IP address: ")
+    port = int(input("Enter port to use (server and client must select same port): "))
+    socket_for_client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # address = ("192.168.0.7", 10000)
+    address = (host_IP, port)
+    socket_for_client.connect(address)
+    while True:
+        message = input("Message: ")
+        socket_for_client.sendall(message.encode())
+        if message == "exit()":
+            break
