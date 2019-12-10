@@ -85,24 +85,3 @@ def t_error(t):
 # Builds the lexer
 
 lexer = lex.lex()
-
-
-# =============================
-#
-# TESTER METHODS, NOT PRODUCTION MATERIAL
-#
-# =============================
-
-data = 'if x > 8 = 10 % 90'
-
-def main():
-
-    lexer.input(data)
-
-    while True:
-        tok = lexer.token()
-        if not tok:
-            break
-        print(tok)
-
-main()
