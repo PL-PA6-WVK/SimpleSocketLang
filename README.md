@@ -3,7 +3,7 @@
   <h3 align="center">SimpleSocketLang</h3>
 
   <p align="center">
-    A language to simplify comunication between devices!
+    Simplicity is King.
     <br />
     <br />
     <br />
