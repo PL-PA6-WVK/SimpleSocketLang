@@ -5,14 +5,8 @@
   <p align="center">
     A language to simplify comunication between devices!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
   </p>
 </p>
 
@@ -36,16 +30,23 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About Simple Socket Lang
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+SimpleSocket simplifies connections between ports with the usage of sockets. Stablish connections between devices consicely with a effortless syntax.
 
-An explanation of the project. 
+* Functional - Communication is effortlessly established via functions, create trouble free immutable sockets that just work.
+
+* Local & Remote - SimpleSocket allows you to establish communication with both local and remote servers. Local servers can be easily created with SSLang.
+
+* Essily extendable - Take advantage of the barebones syntax and SSLang's GNU License and taylor it's capacities for your workflow. 
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+SSLang is completely built with Open Source technologies, including: 
+
 * [Python](https://www.python.org)
 * [PLY](https://www.dabeaz.com/ply/)
+* [Socket](https://docs.python.org/3/library/socket.html)
+* [http.server](https://docs.python.org/3/library/http.server.html)
 
 
 
@@ -53,16 +54,21 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Minimun system requirements to install Python 3
 
-### Prerequisites
+* Processors: Intel Atom® processor or Intel® Core™ i3 processor
+* Disk space: 1 GB
+* Operating systems: Windows* 7 or later, macOS, and Linux
+* Python* versions: 2.7.X, 3.6.X
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
+### Downloading 
+
+
+* Clone the SSLang repository.
+```terminal
+git clone https://github.com/PL-PA6-WVK/SimpleSocketLang.git
 ```
+* Alternatively, a zip file can be dowloaded in the repository. 
 
 ### Installation
 
@@ -88,14 +94,6 @@ const API_KEY = 'ENTER YOUR API';
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
 
 
 <!-- CONTRIBUTING -->
@@ -128,23 +126,6 @@ Kiara Rodríguez - kiara.rodriguez18@upr.edu
 Wilfredo Aponte - wilfredo.aponte@upr.edu
 
 Project Link: [https://github.com/PL-PA6-WVK/SimpleSocketLang](https://github.com/PL-PA6-WVK/SimpleSocketLang)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
 
 
 
