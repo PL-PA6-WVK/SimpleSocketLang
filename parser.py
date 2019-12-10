@@ -38,12 +38,16 @@ class Parser(object):
         'expression : ID'
         p[0] = p[1]
         if p[1] == "local_server":
+            print("Server connected successfully!")
             server.local_server()
-            print("Server connected successfully!")
         elif p[1] == "external_server":
-            sockets.client()
-            # connect to external server
             print("Server connected successfully!")
+            print("localhost:8000 is open, enter that address in browser.")
+            print("To terminate localhost press CTRL+Z")
+            server.local_site()
+            # connect to external server
+        elif p[1] == "client_server":
+            sockets.client()
         else:
         # attempt to lookup variable in current dictionary, throw error if not found
             try:
