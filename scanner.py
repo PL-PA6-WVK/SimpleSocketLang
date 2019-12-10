@@ -1,4 +1,5 @@
 # Author: Victor Nazario Morales (843-15-4984)
+# For contact reach victor.nazario@upr.edu
 
 # ----------------------------------------------------------
 # scanner.py
@@ -11,7 +12,8 @@ tokens = (
     'ID', 'NUMBER',
     'AND', 'OR', 'EQUALS',
     'LPAREN', 'RPAREN', 'COMMA', 'SEMICOLON',
-    'DOT', 'LT', 'LTE', 'GT', 'GTE',
+    'DOT', 'LT', 'LTE', 'GT', 'GTE', 'SPACE',
+     'PLUS', 'DIVISION', 'MULTIPLICATION', 'MODULO'
 )
 
 # Reserved keywords for the language
@@ -37,6 +39,11 @@ t_LT = '<'
 t_LTE = '<='
 t_GT = '>'
 t_GTE = '>='
+t_SPACE = "\ "
+t_PLUS = '\+'
+t_DIVISION = '\/'
+t_MULTIPLICATION = '\*'
+t_MODULO = '\%'
 
 # This will allow for tokenizing on all relevant tokens.
 tokens = tokens + tuple(reserved_keywords.values())
@@ -46,9 +53,8 @@ tokens = tokens + tuple(reserved_keywords.values())
 
 def t_ID(t):
     r'[a-zA-Z_][a-zA-Z0-9_]*'
-    if t.value.upper() in reserved_keywords:
-        t.value = t.value.upper()
-        t.type = t.value
+    if t.value in reserved_keywords:
+        t.type = reserved_keywords[t.value]
     return t
 
 
@@ -58,7 +64,7 @@ def t_ID(t):
 
 
 def t_COMMENT(t):
-    r"""\%.*"""
+    r"""\~.*"""
     pass  # as soon as a comment is detected, it's obviated by the system.
 
 # Will tokenize a sequence identified by the RegEx as a number
@@ -80,7 +86,14 @@ def t_error(t):
 
 lexer = lex.lex()
 
-data = 'IF x > 8 = 10'
+
+# =============================
+#
+# TESTER METHODS, NOT PRODUCTION MATERIAL
+#
+# =============================
+
+data = 'if x > 8 = 10 %    90'
 
 def main():
 
