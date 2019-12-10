@@ -19,6 +19,7 @@ def local_server():
                 data = conn.recv(1024)
                 if not data:
                     break
+
                 msg = rand_msg()
                 conn.sendall(msg)
 
