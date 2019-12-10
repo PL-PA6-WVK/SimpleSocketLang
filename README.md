@@ -87,7 +87,7 @@ $ python SSLang.py
 Example 
 
 ```terminal
-SocketLang ~ fact_server
+SocketLang ~ $ fact_server
 ```
 
 Open a new terminal window
@@ -97,14 +97,14 @@ $ python SSLang.py
 ```
 
 ```terminal
-SocketLang ~ fact_client
+SocketLang ~ $ fact_client
 ```
  ...and Voilá, a fact about Computer Science is presented to the cleint. 
  
 5. Exiting SSLang
 
 ```terminal
-SocketLang ~ exit
+SocketLang ~ $ exit
 ```
 
 <!-- CONTRIBUTING -->
