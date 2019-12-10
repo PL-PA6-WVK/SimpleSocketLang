@@ -15,7 +15,7 @@ def client():
         s.sendall(b'Hello, world')
         data = s.recv(1024)
 
-    print('Received', repr(data))
+    print(repr(data))
 
 
 client()
