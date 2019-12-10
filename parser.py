@@ -46,10 +46,10 @@ class Parser(object):
             print("'localhost:8000' is open, enter that address in browser.")
             server.local_site()
         elif p[1] == "give_a_fact":
-            sockets.client()
-        elif p[1] == "open_chat_1st":
+            sockets.fact_client()
+        elif p[1] == "chat_client":
             sockets.client_chat()
-        elif p[1] == "open_chat_2nd":
+        elif p[1] == "chat_server":
             sockets.server_chat()
         else:
         # attempt to lookup variable in current dictionary, throw error if not found
