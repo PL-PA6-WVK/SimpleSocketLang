@@ -36,7 +36,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## About Simple Socket Lang
 
 SimpleSocket simplifies connections between ports with the usage of sockets. Stablish connections between devices consicely with a effortless syntax.
 
@@ -44,10 +44,15 @@ SimpleSocket simplifies connections between ports with the usage of sockets. Sta
 
 * Local & Remote - SimpleSocket allows you to establish communication with both local and remote servers. Local servers can be easily created with SSLang.
 
+* Essily extendable - Take advantage of the barebones syntax and SSLang's GNU License and taylor it's capacities for your workflow. 
+
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+SSLang is completely built with Open Source technologies, including: 
+
 * [Python](https://www.python.org)
 * [PLY](https://www.dabeaz.com/ply/)
+* [Socket](https://docs.python.org/3/library/socket.html)
+* [http.server](https://docs.python.org/3/library/http.server.html)
 
 
 
@@ -55,10 +60,14 @@ This section should list any major frameworks that you built your project using.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Minimun system requirements to install Python 3
 
-### Prerequisites
+* Processors: Intel Atom® processor or Intel® Core™ i3 processor
+* Disk space: 1 GB
+* Operating systems: Windows* 7 or later, macOS, and Linux
+* Python* versions: 2.7.X, 3.6.X
+
+### Downloading 
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
