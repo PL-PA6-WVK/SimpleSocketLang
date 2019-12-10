@@ -38,9 +38,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+SimpleSocket simplifies connections between ports with the usage of sockets. Stablish connections between devices consicely with a effortless syntax.
 
-An explanation of the project. 
+* Functional - Communication is effortlessly established via functions, create trouble free immutable sockets that just work.
+
+* Local & Remote - SimpleSocket allows you to establish communication with both local and remote servers. Local servers can be easily created with SSLang.
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
