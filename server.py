@@ -1,12 +1,9 @@
 import socket
 import random as rand
 from http.server import HTTPServer, BaseHTTPRequestHandler
-import time
-
-# extPort = 80
-# ip = socket.gethostbyname('www.google.com')
 
 
+# Creates server that returns random computer related fact
 def local_server():
 
     testHost = '127.0.0.1'
@@ -27,6 +24,7 @@ def local_server():
                 conn.sendall(msg)
 
 
+# Function returns a random fact from list
 def rand_msg():
     msg = [b'The first computer programmer was a woman', b'The first computer bug was named after a real bug',
            b'The first digital computer game never made any money', b'The first electronic computer ENIAC weighed more than 27 tons and took up 1800 square feet.',
@@ -38,19 +36,17 @@ def rand_msg():
     return msg[rand.randrange(8)]
 
 
+# Function opens localhost:8000 in order to host a HTML page
 def local_site():
     httpd = HTTPServer(('localhost', 8000), Server)
     httpd.serve_forever()
 
 
-class Server(BaseHTTPRequestHandler):  # Part1 Local server
+# Class create local server
+class Server(BaseHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
             self.path = '/index.html'
-        # temp = input("Do you want to quit?")
-        # if temp == 'yes':
-        #     self.finish()
-        #     return
         try:
             file_to_open = open(self.path[1:]).read()
             self.send_response(200)
