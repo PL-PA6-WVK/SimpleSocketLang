@@ -70,7 +70,7 @@ $ git clone https://github.com/PL-PA6-WVK/SimpleSocketLang.git
 ```
 * Alternatively, a zip file can be dowloaded in the repository. 
 
-### Installation and usage
+### Installation, usage and syntax 
 
 1. Once the project is downloaded, open a terminal at folder
 2. Run SSLang.py
