@@ -106,6 +106,9 @@ SocketLang ~ $ fact_client
 ```terminal
 SocketLang ~ $ exit
 ```
+6. Graphical example of communication between machines
+
+![](SSLangTutorial.gif)
 
 <!-- CONTRIBUTING -->
 ## Contributing
