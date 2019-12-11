@@ -110,6 +110,9 @@ SocketLang ~ $ exit
 
 ![](SSLangTutorial.gif)
 
+###Youtube Video Turorial
+* A complete tutorial on how to use SSLang is available at: http://www.youtube.com/watch?v=_NRfPbaYSoo
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
