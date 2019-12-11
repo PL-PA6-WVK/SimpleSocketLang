@@ -44,13 +44,14 @@ class Parser(object):
         p[0] = p[1]
         if p[1] == "fact_server":
             print("Server connected successfully!")
+            print("A random fact has been sent!")
             server.local_server()
+        elif p[1] == "fact_client":
+            sockets.fact_client()
         elif p[1] == "host_server":
             print("Server connected successfully!")
             print("'localhost:8000' is open, enter that address in browser.")
             server.local_site()
-        elif p[1] == "fact_client":
-            sockets.fact_client()
         elif p[1] == "chat_server":
             sockets.server_chat()
         elif p[1] == "chat_client":
